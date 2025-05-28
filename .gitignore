@@ -1,5 +1,7 @@
 # Created by https://www.toptal.com/developers/gitignore/api/linux,ansible,ansibletower
-# Edit at https://www.toptal.com/developers/gitignore?templates=linux,ansible,ansibletower
+### Edit at https://www.toptal.com/developers/gitignore?templates=linux,ansible,ansibletower
+### Inventory
+all-hosts
 
 ### Ansible ###
 *.retry
