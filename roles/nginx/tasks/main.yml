@@ -1,0 +1,14 @@
+#SPDX-License-Identifier: MIT-0
+---
+# tasks file for nginx
+- name: Instalar nginx
+  apt:
+    name: "{{ nginx_package }}"
+    state: present
+
+- name: Iniciar y habilitar el servicio de nginx
+  service:
+    name: "{{ nginx_service }}"
+    state: started
+    enabled: yes
+  notify: Reiniciar nginx

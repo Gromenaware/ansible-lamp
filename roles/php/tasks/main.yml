@@ -1,0 +1,13 @@
+#SPDX-License-Identifier: MIT-0
+---
+# tasks file for php
+- name: Install PHP
+  apt: name=php state=present update_cache=yes
+
+- name: Copiar info.php
+  copy:
+    src: roles/php/files/info.php
+    dest: /var/www/html
+  notify:
+    - Reiniciar apache
+

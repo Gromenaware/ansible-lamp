@@ -1,0 +1,13 @@
+#SPDX-License-Identifier: MIT-0
+---
+# handlers file for nginx
+- name: Reiniciar nginx
+  service:
+    name: "{{ nginx_service }}"
+    state: restarted
+
+- name: stop nginx
+  service:
+    name: nginx
+    state: stopped
+  when: ansible_facts['services']['nginx.service']['status'] | default('not-found') != 'not-found'

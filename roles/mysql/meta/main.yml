@@ -1,0 +1,9 @@
+#SPDX-License-Identifier: MIT-0
+galaxy_info:
+  author: Guillem Hernandez Sola
+  description: Consultant
+  company: Gromenaware Corp.
+  license: CC-4.0-NC
+  min_ansible_version: 2.1
+  galaxy_tags: []
+dependencies: []
